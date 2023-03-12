@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RulesOfTheGame"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/herneOkno"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/pravidlapozadie">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PRAVIDLA:"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Červený kameň zvyšuje teplotu o 1"
+            android:textColor="@color/black"
+            android:translationY="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Modrý kameň znižuje teplotu o 1"
+            android:textColor="@color/black"
+            android:translationY="40dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prispôsob teplotu podľa zadania a prejdi všetkými piatimi zadaniami "
+            android:textColor="@color/black"
+            android:translationY="60dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ak nie si spokojný s rozložením kamienkov, klikni na tlačidlo Zmaž "
+            android:textColor="@color/black"
+            android:translationY="100dp" />
+
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:background="@android:color/background_light"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Return"
+            android:text="Naspäť"
+            />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

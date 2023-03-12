@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActual"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/herneOkno"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/pravidlapozadie">
+
+
+
+        <ImageView
+            android:id="@+id/kotlik"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/kotlik"
+            android:layout_gravity="center_horizontal"
+            android:translationY="140dp" />
+
+        <ImageView
+            android:id="@+id/bodka"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:src="@drawable/reddot"
+            android:translationX="30dp"
+            android:translationY="95dp" />
+
+        <ImageView
+            android:id="@+id/thermometer"
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            android:src="@drawable/teplomer"
+            android:translationY="20dp" />
+
+        <TextView
+            android:id="@+id/thermoCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:translationY="350dp" />
+
+
+        <LinearLayout
+            android:id="@+id/layloutZadanie"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="10"
+            android:layout_gravity="center_horizontal"
+            android:background="#AC7EFC"
+            android:orientation="horizontal"
+            android:translationY="470dp">
+
+            <TextView
+                android:id="@+id/zadanie"
+                android:layout_width="253dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="reset"
+                android:text="Zmaž" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layloutUkladanie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:layout_gravity="center_horizontal"
+            android:background="#AC7EFC"
+            android:orientation="horizontal"
+            android:translationY="510dp"
+            >
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/prve"
+                android:src="@drawable/mcgrey"/>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/druhe"
+                android:src="@drawable/mcgrey"/>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/tretie"
+                android:src="@drawable/mcgrey"/>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/strvrte"
+                android:src="@drawable/mcgrey"/>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/piate"
+                android:src="@drawable/mcgrey"/>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/sieste"
+                android:src="@drawable/mcgrey"/>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/siedme"
+                android:src="@drawable/mcgrey"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/osme"
+                android:src="@drawable/mcgrey"/>
+
+
+
+        </LinearLayout>
+
+
+        <ImageButton
+            android:id="@+id/mcred"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="31dp"
+            android:layout_marginLeft="31dp"
+            android:layout_marginTop="600dp"
+            android:background="@drawable/mcred"
+
+            android:scaleType="fitXY"
+            android:text=""
+            android:translationY="-20dp"
+            tools:ignore="SpeakableTextPresentCheck,DuplicateClickableBoundsCheck" />
+
+        <ImageButton
+            android:id="@+id/mcblue"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="300dp"
+            android:layout_marginLeft="400dp"
+            android:layout_marginTop="600dp"
+            android:background="@drawable/mcblue"
+            android:scaleType="fitXY"
+            android:text=""
+            android:translationY="-20dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/poletextove"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            />
+
+
+    </FrameLayout>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="domenu"
+        android:text="Koniec Hry"/>
+
+
+
+
+
+</LinearLayout>
